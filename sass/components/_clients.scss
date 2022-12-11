@@ -1,0 +1,50 @@
+.clients__lists {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $black-color;
+    margin-bottom: 50px;
+  }
+  
+  .clients__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:  border-color $time $type-transition;
+    -webkit-transition:  border-color $time $type-transition;
+    -moz-transition:  border-color $time $type-transition;
+    -ms-transition:  border-color $time $type-transition;
+    -o-transition:  border-color $time $type-transition;
+  }
+  
+  
+  
+  .clients__icon {
+    fill: #afb1b8;
+    transition: fill $time $type-transition;
+    -webkit-transition: fill $time $type-transition;
+    -moz-transition: fill $time $type-transition;
+    -ms-transition: fill $time $type-transition;
+    -o-transition: fill $time $type-transition;
+  }
+  
+  .clients__link:hover,
+  .clients__link:focus {
+    border: 1px solid #2196f3;
+  }
+  
+  .clients__link:hover .clients__icon,
+  .clients__link:focus .clients__icon {
+    fill: #2196f3;
+  }
