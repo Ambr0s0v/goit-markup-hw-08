@@ -18,7 +18,9 @@
 .header__address {
   display: flex;
   gap: 30px;
+  margin-left: 200px;
 }
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -28,6 +30,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  margin-left: 93px;
 }
 
 .icon-smartphone {
@@ -39,9 +42,6 @@
   color: #757575;
 }
 
-.header__nav-lists {
-  margin-left: 93px;
-}
 
 .header-container {
   display: flex;
@@ -101,3 +101,4 @@
 .icon-smartphone {
   fill: currentColor;
 }
+

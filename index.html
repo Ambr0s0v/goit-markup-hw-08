@@ -18,34 +18,33 @@
     <!-- header / start -->
     <header class="header">
       <div class="container header-container">
+        <a href="#" class="header__logo-link logo-link"><span class="header__logo-color logo-color">Web</span>Studio</a>
         <nav class="header__nav">
           
-          <a href="#" class="header__logo-link logo-link"><span class="header__logo-color logo-color">Web</span>Studio</a>
-          
           <ul class="header__nav-lists">
-            <li class="header__nav-item ">
-              <a href="./index.html" class="header__nav-link active">Студія</a>
-            </li>
+            <li class="header__nav-item "><a href="./index.html" class="header__nav-link active">Студія</a></li>
             <li class="header__nav-item"><a href="./portfolio.html" class="header__nav-link">Портфоліо</a></li>
             <li class="header__nav-item"><a href="#" class="header__nav-link">Контакти</a></li>
           </ul>
 
         </nav>
-
         <ul class="header__address">
           <li class="header__address-item">
-            <a href="mailto:info@devstudio.com" class="header__nav-link-address">
+            <a href="mailto:info@devstudio.com" class="header__nav-link-address header-phone">
             <svg class="header__sprite-item icon-envelope" width="16" height="12">
               <use href="./images/header-sprite.svg#icon-envelope" ></use>
-            </svg>info@devstudio.com</a>
+            </svg>+38 096 111 11 11</a>
           </li>
           <li class="header__address-item">
-            <a href="mailto:info@devstudio.com" class="header__nav-link-address">
+            <a href="mailto:info@devstudio.com" class="header__nav-link-address header-mail">
             <svg class="header__sprite-item icon-envelope" width="16" height="16">
               <use href="./images/header-sprite.svg#icon-smartphone" ></use>
             </svg>info@devstudio.com</a>
           </li>
         </ul>
+        
+        
+        
 
       </div>
     </header>
@@ -284,58 +283,52 @@
       </section>
       
       
-      <section class="clients section">
+      <section class="section clients">
         <div class="container">
-          <h2 class="clients__title">Постійні клієнти</h2>
-          <ul class="clients__lists">
-            <a href="#" class="clients__link">
-              <li class="clients__item">
-                <svg class="clients__icon" width="106" height="60" >
+          <h2 class="title clients__title">Постійні клієнти</h2>
+          <ul class="clients-icon__list">
+            <li class="clients-icon__item">
+              <a class="clients-icon__link" href="#">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite-clients.svg#icon-clients__img1"></use>
                 </svg>
-              </li>
-            </a>
-            
-            <a href="#" class="clients__link">
-              <li class="clients__item">
+              </a>
+            </li>
+            <li class="clients-icon__item">
+              <a class="clients-icon__link" href="#">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite-clients.svg#icon-clients__img2"></use>
                 </svg>
+              </a>
+            </li>
+            <li class="clients-icon__item">
+              <a class="clients-icon__link" href="#">
+                <svg class="clients__icon" width="106" height="60">
+                  <use href="./images/sprite-clients.svg#icon-clients__img3"></use>
                 </svg>
-              </li>
-            </a>
-            
-            <a href="#" class="clients__link">
-              <li class="clients__item">
-              <svg class="clients__icon" width="106" height="60">
-                <use href="./images/sprite-clients.svg#icon-clients__img3"></use>
-              </svg>
-            </li></a>
-            
-            <a href="#" class="clients__link">
-              <li class="clients__item">
+              </a>
+            </li>
+            <li class="clients-icon__item">
+              <a class="clients-icon__link" href="#">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite-clients.svg#icon-clients__img4"></use>
                 </svg>
-              </li>
-            </a>
-            
-            <a href="#" class="clients__link">
-              <li class="clients__item">
-                <svg class="clients__icon" width="93" height="43">
+              </a>
+            </li>
+            <li class="clients-icon__item">
+              <a class="clients-icon__link" href="#">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite-clients.svg#icon-clients__img5"></use>
                 </svg>
-              </li>
-            </a>
-            
-            <a href="#" class="clients__link">
-              <li class="clients__item">
-                <svg class="clients__icon" width="93" height="43">
+              </a>
+            </li>
+            <li class="clients-icon__item">
+              <a class="clients-icon__link" href="#">
+                <svg class="clients__icon" width="106" height="60">
                   <use href="./images/sprite-clients.svg#icon-clients__img6"></use>
                 </svg>
-              </li>
-            </a>
-            
+              </a>
+            </li>
           </ul>
         </div>
       </section>
@@ -493,6 +486,35 @@
         </div>  
 
       </div>
+
+      <div class="mobile-modal is-open" data-menu>
+        <ul class="mobile__nav" >
+          <li class="mobile__nav-item"><a href="#" class="mobile__nav-link active">Студия</a></li>
+          <li class="mobile__nav-item"><a href="#" class="mobile__nav-link">Портфолио</a></li>
+          <li class="mobile__nav-item"><a href="#" class="mobile__nav-link">Контакты</a></li>
+        </ul>
+
+        <ul class="mobile__address">
+          <li class="mobile__address-item"><a href="#" class="mobile__address-link active">+38 096 111 11 11</a></li>
+          <li class="mobile__address-item"><a href="#" class="mobile__address-link">info@devstudio.com</a></li>
+        </ul>
+
+        <ul class="mobile__social">
+          <li class="mobile__social-item"><a href="#" class="mobile__social-link" class="mobile__social-link" >Instagram</a></li>
+          <li class="mobile__social-item"><a href="#" class="mobile__social-link" >Twitter</a></li>
+          <li class="mobile__social-item"><a href="#" class="mobile__social-link" >Facebook</a></li>
+          <li class="mobile__social-item"><a href="#" class="mobile__social-link" >LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <button type="button" class="mobile__menu-button is-open" data-menu-button aria-label="Переключатель мобильного меню" aria-expanded="false">
+        <svg width="25" height="25">
+          <use class="icon__menu-menu" href="./images/sprite-modal.svg#mobile_menu"></use>
+          <use class="icon__menu-close" href="./images/sprite-modal.svg#mobile_close"></use>
+        </svg>
+      </button>
+
+
 
     <script src="./js/modal.js"></script>
   </body>

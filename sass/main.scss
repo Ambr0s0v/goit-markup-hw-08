@@ -10,4 +10,10 @@
 @import "./components/modal";
 @import "./components/portfolio-nav";
 @import "./components/portfolio-list";
-
+@import "./utils/breakpoints";
+@import "./components/adaptive-mobile/mobile__modal";
+@import "./components/adaptive-mobile/mobile__banner";
+@import "./components/adaptive-mobile/mobile__details";
+@import "./components/adaptive-mobile/mobile__doing";
+@import "./components/adaptive-mobile/mobile__team";
+@import "./components/adaptive_desktop/desktop__header";
