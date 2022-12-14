@@ -19,20 +19,20 @@
     -o-transition: visibility $time $type-transition, opacity $time $type-transition;
   }
   .backgrop.is-hidden .modal{
-    transform: translate(-50%, -50%) scale(1.5);
-  }
+    transform: translate(-50% -50%) scale(1.5);
+    -webkit-transform: translate(-50% -50%) scale(1.5);
+    -moz-transform: translate(-50% -50%) scale(1.5);
+    -ms-transform: translate(-50% -50%) scale(1.5);
+    -o-transform: translate(-50% -50%) scale(1.5);
+}
   
   .modal {
     position: absolute;
-    left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 528px;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 450px;
     background-color: #fff;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-    -moz-transform: translate(-50%, -50%) scale(1);
-    -ms-transform: translate(-50%, -50%) scale(1);
-    -o-transform: translate(-50%, -50%) scale(1);
     padding: 40px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -41,7 +41,13 @@
     -moz-transition: transform $time $type-transition;
     -ms-transition: transform $time $type-transition;
     -o-transition: transform $time $type-transition;
-  }
+    @media screen and(min-width: $laptop){
+      width: 528px;
+    }
+  
+    }
+  
+      
   .modal__close {
     position: absolute;
     top: 8px;
@@ -303,6 +309,155 @@
   .real-checkbox:checked ~ .form-icon{
     opacity: 1;
   }
+
+    .mobile-modal{
+        //display: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 40px;
+        background-color: $bg-white-color;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        &.is-open{
+          transform: translateX(0);
+          -webkit-transform: translateX(0);
+          -moz-transform: translateX(0);
+          -ms-transform: translateX(0);
+          -o-transform: translateX(0);
+        }
+        @media screen and (min-width: $laptop){
+          display: none;
+        }
+        @media screen and (min-width: $desktop){
+          display: none;
+        }
+      }
+      .mobile__nav{
+        margin-bottom: 302px;
+        
+    }
+    
+    .mobile__nav-link{
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        padding-bottom: 35px;
+        color: #212121;
+        &.active{
+            color: $blue-color;
+        }
+    }
+  
+    .mobile__nav-item:not(:last-child){
+        margin-bottom: 35px;
+    }
+  
+    
+  
+    .mobile__address-link{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #757575;
+        display: block;
+        margin-bottom: 32px;
+        &.active{
+            color: $blue-color;
+        }
+        
+    }
+    .mobile__social{
+        display: flex;
+        gap: 10px;
+        margin-top: 32px;
+        display: inline-flex;
+    }
+  
+    .mobile__social-item{
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding: 0 5px 0 0;
+        &:last-child{
+            border-right:0;
+        }
+    }
+    .mobile__social-link{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height, or 122% */
+        letter-spacing: 0.02em;
+  
+        color: #2196F3;
+    }
+  
+    .mobile__menu-button{
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 20px;
+        right:22px;
+        @media screen and (min-width: $laptop) {
+          display: none;
+        }
+        @media screen and (min-width: $desktop) {
+          display: none;
+        }
+    
+    }
+    
+    .mobile__menu-button.is-open .icon__menu-close{
+        display: none;  
+    }
+    
+    .mobile__menu-button.is-open .icon__menu-close{
+        display: none;
+    
+    }
+    
+    .mobile__menu-button.is-open .icon__menu-close{
+        display: block;
+    }
+  
+  .agree{
+    font-size: 11px;
+  }
+  .agree-link{
+    font-size: 11px;
+  }
+  
+  .field__checkbox label{
+    font-size: 12px;
+    align-items: center;
+  }
+  
+  .custom-checkbox{
+    top:45%;
+    left:3px;
+  }
+  
+  .field__checkbox .form-icon{
+    top:45%;
+    left:3px;
+  }
+  
+  
+  
+
   
 
 

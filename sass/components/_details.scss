@@ -5,12 +5,37 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $grey-color;
+  text-align: left;
+  @media screen and (min-width: $desktop) {
+    
+  }
 }
 
 .details__lists {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  @media screen and (min-width: $laptop) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: unset;
+    gap: 30px;
+  }
+ 
+}
+
+.details__item {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $laptop) {
+    max-width: 354px;
+  }
 }
 
 .details__item::before {
@@ -48,4 +73,7 @@
   text-transform: uppercase;
   color: inherit;
   margin-bottom: 10px;
+  @media screen and (min-width: $desktop) {  
+      text-align: center;
+  }
 }

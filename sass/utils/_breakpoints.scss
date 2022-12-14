@@ -1,24 +1,12 @@
-$mobile: 480px;
-$laptop: 768px;
-$desktop: 1200px;
-
-@media screen and (min-width:$mobile){
-    .container{
-        min-width: $mobile;
+.container{
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @media screen and (min-width: $laptop){
+        max-width:768px;
+    }
+    @media screen and (min-width: $desktop){
+        max-width:1200px;
     }
 }
-
-@media screen and (min-width:$laptop){
-    .container{
-        min-width: $laptop;
-    }
-}
-
-@media screen and (min-width:$desktop){
-    .container{
-        min-width: $desktop;
-    }
-}
-
-
 

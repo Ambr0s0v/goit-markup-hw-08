@@ -1,5 +1,9 @@
 .doing {
     padding-bottom: 94px;
+    display: none;
+    @media screen and (min-width: $desktop){
+      display: block;
+  }
   }
   .doing__list{
     display: flex;
