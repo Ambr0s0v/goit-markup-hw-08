@@ -317,6 +317,8 @@
         top: 0;
         left: 0;
         padding: 40px;
+        opacity: 0;
+        visibility: hidden;
         background-color: $bg-white-color;
         transform: translateX(100%);
         -webkit-transform: translateX(100%);
@@ -324,6 +326,11 @@
         -ms-transform: translateX(100%);
         -o-transform: translateX(100%);
         &.is-open{
+          display: flex;
+          flex-direction: column;
+          opacity: 1;
+          height: 100%;
+          visibility: visible;
           transform: translateX(0);
           -webkit-transform: translateX(0);
           -moz-transform: translateX(0);
@@ -338,7 +345,7 @@
         }
       }
       .mobile__nav{
-        margin-bottom: 302px;
+        margin-bottom: auto;
         
     }
     
