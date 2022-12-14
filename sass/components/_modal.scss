@@ -318,7 +318,8 @@
         left: 0;
         padding: 40px;
         opacity: 0;
-        visibility: hidden;
+        // visibility: hidden;
+        display:none;
         background-color: $bg-white-color;
         transform: translateX(100%);
         -webkit-transform: translateX(100%);

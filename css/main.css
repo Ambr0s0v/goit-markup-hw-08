@@ -1390,7 +1390,7 @@ textarea {
   left: 0;
   padding: 40px;
   opacity: 0;
-  visibility: hidden;
+  display: none;
   background-color: #fff;
   transform: translateX(100%);
   -webkit-transform: translateX(100%);
